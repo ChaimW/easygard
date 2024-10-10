@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
+ruby '3.3.5'
 gem 'sinatra'
 gem 'webrick'
 gem 'json'
-ruby '2.7.8'
-
-
+gem 'rackup'
 gem "openssl", "~> 3.1"
