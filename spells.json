@@ -386,25 +386,6 @@
     "e": "Target player dies"
   },
 
-  "cancel": {
-    "name": "Cancel",
-    "keywords": "bard druid healer wizard",
-    "classes": {
-      "AntiPaladin": "1",
-      "Bard": "1",
-      "Druid": "1",
-      "Healer": "1",
-      "Paladin": "1",
-      "Scout": "1",
-      "Wizard": "1"
-    },
-    "t": "Neutral",
-    "s": "Neutral",
-    "r": "Touch",
-    "i": "\"My work shall be undone\" x3",
-    "e": "Remove an Enchantment cast by the caster"
-  },
-
   "circleofprotection": {
     "name": "Circle of Protection",
     "keywords": "healer enchantment protection insubstantial",
