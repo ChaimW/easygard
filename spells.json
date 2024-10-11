@@ -1394,7 +1394,7 @@
     "i": "\"Phase Arrow\"",
     "m": "<a href=\"/weapons/#Ammunition\" data-ajax=\"false\">Arrow</a> with grey cover labeled ‘Phase’",
     "e": "This arrow does not interact with ongoing Magic or Abilities. Example: This arrow is not stopped by Stoneskin, Protection from Projectiles, and does not trigger the effects of Troll Blood, Undead Minion, Missile Block, or similar Magic or Abilities",
-    "n": "This arrow does not supercede the Frozen, Insubstantial, or Out of Game States"
+    "n": "This arrow does not supercede the Frozen, Insubstantial, or Invulnerable States"
   },
 
   "phasebolt": {
@@ -1409,7 +1409,7 @@
     "i": "\"The power of sorcery is mine to evoke\" x3",
     "m": "Grey Magic Ball",
     "e": "This Magic Ball does not interact with other ongoing Magic or Abilities. Example: This Magic Ball is not stopped by Stoneskin, Protection from Projectiles, and does not trigger the effects of Troll Blood, Undead Minion, Magic Ball Block, or similar Magic or Abilities. Will have one of the following effects:<br>1. A weapon hit is destroyed<br>2. Armor hit with Armor Points remaining is subject to <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Armor Breaking</a><br>3. A player hit receives a Wound in that hit location",
-    "n": "Does not supercede the Frozen, Insubstantial, or Out of Game States"
+    "n": "Does not supercede the Frozen, Insubstantial, or Invulnerable States"
   },
 
   "phoenixtears": {
@@ -1615,7 +1615,7 @@
 
   "reload": {
     "name": "Reload",
-    "keywords": "archer verbal sorcery out of game",
+    "keywords": "archer verbal sorcery invulnerable",
     "classes": {
       "Archer": "1"
     },
@@ -1623,7 +1623,7 @@
     "s": "Sorcery",
     "r": "Self",
     "i": "\"I nocked my arrows to my bow, I let them fly, my quiver is low. Now I pause to go reload.\" x3",
-    "e": "Player becomes <a href=\"/states/#OutOfGame\" data-ajax=\"false\">Out of Game</a> and may move about the field retrieving their arrows. The player may remove their Out of Game state in the location they started by stating, \"I return with a full quiver\" x3",
+    "e": "Player becomes <a href=\"/states/#OutOfGame\" data-ajax=\"false\">Invulnerable</a> and may move about the field retrieving their arrows. The player may remove their Invulnerable state in the location they started by stating, \"I return with a full quiver\" x3",
     "l": "Must stay at least 10’ away from other players at all times",
     "n": "May ask reeve for assistance in retrieving arrows that are within 10’ of other players"
   },
