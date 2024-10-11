@@ -107,7 +107,7 @@
     "t": "Enchantment",
     "s": "Protection",
     "r": "Touch: Others",
-    "i": "<br>\"May this armor protect you from all forms of harm.<br>May the flames of the fire not burn you.<br>May the bolts from the heavens not strike you.<br>May the arrows of your enemies not pierce you.<br>May this armor protect you from all forms of harm\"",
+    "i": "<br>\"May this armor protect thee from all forms of harm.<br>May the flames of the fire not burn you.<br>May the bolts from the heavens not strike you.<br>May the arrows of your enemies not pierce you.<br>May this armor protect thee from all forms of harm\"",
     "m": "White Strip",
     "e": "The effects of a <a href=\"/spells/balls\" data-ajax=\"false\">Magic Ball</a>, <a href=\"/weapons/#Projectiles\" data-ajax=\"false\">projectile</a> weapon, or melee weapon which just struck armor worn by the player are ignored, even if the object would not otherwise affect the armor. The armor loses one point of value in the location struck. This effect will not trigger if the armor has no points left in the location struck. Ancestral Armor is not expended after use and will continue to provide protection until removed with Dispel Magic or similar magic or abilities",
     "l": "Phase Arrow and Phase Bolt interact with armor worn by the bearer as though Ancestral Armor was not present",
@@ -1885,7 +1885,7 @@
     "i": "\"I sing of my unwavering determination\"",
     "m": "No strip required",
     "e": "Bearer is Immune to Command. Bearer must Chant \"Song of Determination\" or sing a song regarding their determination. Singing in place of the normal Chant is still a Chant and must follow all Chant rules."
-  },    
+  },
 
   "songoffreedom": {
     "name": "Song of Freedom",
@@ -1928,7 +1928,7 @@
     "m": "No strip required",
     "e": "Friendly players within 20’ of the bearer have their Charging Incantation repetitions divided by 2, rounded down, to a minimum of 1. Bearer is Stopped. Bearer must Chant “Song of Power” or sing an inspiring song. Singing in place of the normal Chant is still a Chant and must follow all Chant rules",
     "l": "Players can only benefit from one instance of Song of Power at a time"
-  },  
+  },
 
 
   "songofsurvival": {
