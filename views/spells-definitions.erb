@@ -7,7 +7,7 @@
 <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
 <% @loaded = 'true' %>
 
-	<div role="main" class="ui-content">
+    <div role="main" class="ui-content">
             <ul data-role="listview" data-inset="true" data-icon="false">
                <li><a href="#abilities">Abilities</a></li>
                <li><a href="#archetypes">Archetypes</a></li>
@@ -28,9 +28,9 @@
                <li><a href="#woundtrigger">Wound Trigger</a></li>
             </ul>
 
-	</div><!-- /footer -->
+    </div><!-- /footer -->
 
-	</div><!-- /content -->
+    </div><!-- /content -->
 
 </div><!-- /page -->
 
@@ -42,10 +42,10 @@
 <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
 <% @loaded = 'true' %>
 
-	<div role="main" class="ui-content">
-    		<div class="jqm-block-content">
-    			<h3>Abilities</h3>
-    			<p>Powers or skills that must be activated to be used.</p>
+    <div role="main" class="ui-content">
+            <div class="jqm-block-content">
+                <h3>Abilities</h3>
+                <p>Powers or skills that must be activated to be used.</p>
                 <ol>
                     <li>Ability Enchantments denoted as Magical (m) in the class description count towards the bearers limit for carried <a href="/enchantments/" data-ajax="false">Enchantments</a>. May be removed by Magic that removes Enchantments, such as Dispel</li>
                     <li>Ability Enchantments denoted as Extraordinary (ex) in the class description do not count towards enchantment limits or count for the purposes of Attuned, Essence Graft, or similar magic and abilities. May be removed by Magic that removes Enchantments, such as Dispel. A player may not have more than one (ex) enchantment of the same name</li>
@@ -57,9 +57,9 @@
                 <p><i><a href="#magic-definitions">All Magic Definitions</a></i></p>
             </div>
 
-	</div><!-- /footer -->
+    </div><!-- /footer -->
 
-	</div><!-- /content -->
+    </div><!-- /content -->
 
 </div>
 <!-- Abilities /page -->
@@ -72,16 +72,16 @@
 <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
 <% @loaded = 'true' %>
 
-	<div role="main" class="ui-content">
-    		<div class="jqm-block-content">
-    			<h3>Archetypes</h3>
-    			<p>Class abilities which modify base rules about their class. Archetypes are denoted with an (A) and are always active throughout the game. Archetypes may not be removed by any means and persist after respawn. Archetypes are not enchantments, and do not count towards enchantment limits or count for the purposes of Attuned, Essence Graft, or similar magic and abilities. You do not have to have an archetype, even if one is available to you.</p>
+    <div role="main" class="ui-content">
+            <div class="jqm-block-content">
+                <h3>Archetypes</h3>
+                <p>Class abilities which modify base rules about their class. Archetypes are denoted with an (A) and are always active throughout the game. Archetypes may not be removed by any means and persist after respawn. Archetypes are not enchantments, and do not count towards enchantment limits or count for the purposes of Attuned, Essence Graft, or similar magic and abilities. You do not have to have an archetype, even if one is available to you.</p>
                 <p><i><a href="#magic-definitions">All Magic Definitions</a></i></p>
             </div>
 
-	</div><!-- /footer -->
+    </div><!-- /footer -->
 
-	</div><!-- /content -->
+    </div><!-- /content -->
 
 </div>
 <!-- Archetypes /page -->
@@ -275,7 +275,7 @@
                         <ol type="a">
                             <li>Owners of Magic Balls may grant other players permission to carry their Magic Balls in order to return them to the owner or to the owner’s base. They may also grant other players permission to use their Magic Balls if the other person has the ability to do so</li>
                         </ol>
-                    </li>      
+                    </li>
                     <li>A Magic Ball must be held in the caster's hand by the end of the Incantation</li>
                     <li>Once a Magic Ball’s Incantation has been said, it is considered active until it hits a Player, Wielded Equipment, or Terrain. It will also become inactive if the caster begins an incantation or the material component stops being held in hand and has not been thrown. The caster can transfer an active Magic Ball from one hand to the other without it becoming inactive and can wield a weapon or shield in a hand that is also holding an active Magic Ball</li>
                     <li>A player may only have one Magic Ball active at a time</li>
@@ -337,8 +337,22 @@
     <div role="main" class="ui-content">
             <div class="jqm-block-content">
                 <h3>Range</h3>
-                <p>The target of a Magic or Ability must be in range at the completion of an Incantation. The target being out of range at any other point does not prevent or interrupt the casting attempt. If a piece of equipment is the target, the physical equipment itself it what needs to be in range. If the incantation is completed and the target is not in range, the Magic or Ability has no effect but is still expended. For Magics
-                and Abilities used at a range of Touch, any physical contact between caster and target is sufficient. Unless otherwise noted, Magics and Abilities with a listed range of Touch or greater can be cast at range Self. Magic or Abilities used at a range of Touch may only be used on players that are willing, Dead, Frozen, Stunned, or otherwise unable to move and unable to engage in combat</p>
+                <p>The target of a Magic or Ability must be in range at the completion of an Incantation. The target being out of range at any other point does not prevent or interrupt the casting attempt. If a piece of equipment is the target, the physical equipment itself is what needs to be in range. If the incantation is completed and the target is not in range, the Magic or Ability has no effect but is still expended.</p>
+                <ul>
+                    <li>Self: Target must be the caster.</li>
+                    <li>Other: Target must be other players that are in direct physical contact.</li>
+                    <li>Touch: Target may be Self or Others. Other players must be in direct physical contact.</li>
+                    <li>20': Target must be within 20' at upon completion of the incantation.</li>
+                    <li>50': Target must be within 50' at upon completion of the incantation.</li>
+                </ul>
+                <p>Magic or Abilities that require physical contact may only be used provided at least one of the following is true:</p>
+                <ul>
+                    <li>The target is willing</li>
+                    <li>The target is Dead</li>
+                    <li>The target is Stunned</li>
+                    <li>The target is Frozen</li>
+                    <li>The target is Insubstantial and unable to move from their current location.</li>
+                </ul>
                 <p><i><a href="#magic-definitions">All Magic Definitions</a></i></p>
             </div>
 
