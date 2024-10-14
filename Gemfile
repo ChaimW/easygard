@@ -4,4 +4,4 @@ gem 'sinatra'
 gem 'webrick'
 gem 'json'
 gem 'rackup'
-# gem 'openssl'
+gem "openssl", "~> 3.1"
