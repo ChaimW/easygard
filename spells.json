@@ -123,7 +123,7 @@
     },
     "t": "Verbal",
     "s": "Death",
-    "r": "20'",
+    "r": "50'",
     "i": "\"Assassinate\"",
     "e": "The victim is <a href=\"/states/#Cursed\" data-ajax=\"false\">Cursed</a>",
     "l": "May only be used immediately upon killing an enemy",
