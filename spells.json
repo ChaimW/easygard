@@ -863,7 +863,7 @@
     "name": "Force Bolt",
     "keywords": "druid wizard bolt ball sorcery",
     "classes": {
-      "Druid": "4",
+      "Druid": "2",
       "Wizard": "1"
     },
     "t": "Magic Ball",
@@ -1116,7 +1116,7 @@
     "name": "Iceball",
     "keywords": "druid healer wizard ball subdual",
     "classes": {
-      "Druid": "2",
+      "Druid": "4",
       "Healer": "3",
       "Wizard": "3"
     },
