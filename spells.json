@@ -69,15 +69,17 @@
 
   "amplification": {
     "name": "Amplification",
-    "keywords": "bard verbal sorcery",
+    "keywords": "bard verbal sorcery enchantment extension",
     "classes": {
       "Bard": "4"
     },
-    "t": "Verbal",
+    "t": "Enchantment",
     "s": "Sorcery",
-    "r": "Touch:Others",
-    "i": "\"My power amplifies thine\"",
-    "e": "Target player’s next Verbal magic is affected as per Extension"
+    "r": "Touch",
+    "i": "\"My poer amplifies thy voice\" x3",
+    "m": "Yellow Strip",
+    "e": "Bearer gains <a href=\"/spells/e#extension\" data-ajax=\"false\">Extension</a> 1/refresh Charge x3. Other sources of Extension may not be utilized while Amplification is worn",
+    "n": "Does not use up any purchased instances of Extension"
   },
 
   "ambulant": {
