@@ -1559,7 +1559,7 @@
     },
     "t": "Archetype",
     "s": "Neutral",
-    "e": "The cost of all available Equipment is reduced to zero points. May use <a href=\"/weapons/#Bow\" data-ajax=\"false\">bows</a> so long as a shield is not carried. The cost of all Enchantments is doubled"
+    "e": "The cost of all available Equipment is reduced to zero points. May use <a href=\"/weapons/#Bow\" data-ajax=\"false\">bows</a>. The cost of all Enchantments is doubled"
   },
 
   "ravage": {
