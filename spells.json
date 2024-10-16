@@ -891,7 +891,7 @@
 
   "giftofearth": {
     "name": "Gift of Earth",
-    "keywords": "druio enchantment protection suppressed",
+    "keywords": "druid enchantment protection suppressed",
     "classes": {
       "Druid": "2"
     },
@@ -900,7 +900,7 @@
     "r": "Other",
     "i": "\"I grant thee a gift of the earth\" x3",
     "m": "White Strip",
-    "e": "Bearer gains two points of magic armor and is affected as per <a href=\"/spells/g#greaterharden\" data-ajax=\"false\">Greater Harden</a>. Bearer is Suppressed"
+    "e": "Bearer gains one point of magic armor and is affected as per <a href=\"/spells/h#harden\" data-ajax=\"false\">Harden</a>."
   },
 
   "giftoffire": {
