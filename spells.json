@@ -1280,19 +1280,6 @@
     "e": "Bearer gains two points of magic armor. Bearer’s melee weapons are <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Shield Crushing</a>. Bearer is Immune to Command"
   },
 
-  "magicballblock": {
-    "name": "Magic Ball Block",
-    "keywords": "monk enchantment protection",
-    "classes": {
-      "Monk": "6"
-    },
-    "t": "Granted as Trait",
-    "s": "Protection",
-    "r": "Self",
-    "e": "Player is allowed to block <a href=\"/spells/balls\" data-ajax=\"false\">Magic Balls</a> with their wielded weapons and hands without penalty. Any Magic Ball in motion touched by their wielded weapon or hand is nullified",
-    "n": "<a href=\"/spells/definitions#engulfing\" data-ajax=\"false\">Engulfing</a> effects from blocked Magic Balls do not activate"
-  },
-
   "masshealing": {
     "name": "Mass Healing",
     "keywords": "healer enchantment spirit",
@@ -1334,8 +1321,8 @@
     "t": "Granted as Trait",
     "s": "Protection",
     "r": "Self",
-    "e": "Player is allowed to block arrows and projectile weapons with their wielded weapons and hands without penalty. Any arrow or projectile weapon in motion touched by their wielded weapon or hand is nullified",
-    "n": "Engulfing effects from blocked arrows and projectiles do not activate"
+    "e": "Player is allowed to block arrows, projectile weapons, and magic balls with their wielded weapons and hands without penalty. Any arrow, projectile weapon, or magic ball touched by their wielded weapon or hand is nullified",
+    "n": "Engulfing effects from blocked arrows, projectile weapons, and magic balls do not activate"
   },
 
   "naturalizemagic": {
@@ -1402,7 +1389,7 @@
     "s": "Sorcery",
     "i": "\"The power of sorcery is mine to evoke\" x3",
     "m": "Grey Magic Ball",
-    "e": "This Magic Ball does not interact with other ongoing Magic or Abilities. Example: This Magic Ball is not stopped by Stoneskin, Protection from Projectiles, and does not trigger the effects of Troll Blood, Undead Minion, Magic Ball Block, or similar Magic or Abilities. Will have one of the following effects:<br>1. A weapon hit is destroyed<br>2. Armor hit with Armor Points remaining is subject to <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Armor Breaking</a><br>3. A player hit receives a Wound in that hit location",
+    "e": "This Magic Ball does not interact with other ongoing Magic or Abilities. Example: This Magic Ball is not stopped by Stoneskin, Protection from Projectiles, and does not trigger the effects of Troll Blood, Undead Minion, Missile Block, or similar Magic or Abilities. Will have one of the following effects:<br>1. A weapon hit is destroyed<br>2. Armor hit with Armor Points remaining is subject to <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Armor Breaking</a><br>3. A player hit receives a Wound in that hit location",
     "n": "Does not supercede the Frozen, Insubstantial, or Invulnerable States"
   },
 
