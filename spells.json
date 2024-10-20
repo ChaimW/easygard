@@ -1604,8 +1604,8 @@
     "s": "Sorcery",
     "r": "Self",
     "i": "\"I nocked my arrows to my bow, I let them fly, my quiver is low. Now I pause to go reload.\" x3",
-    "e": "Player becomes <a href=\"/states/#OutOfGame\" data-ajax=\"false\">Invulnerable</a> and may move about the field retrieving their arrows. The player may remove their Invulnerable state in the location they started by stating, \"I return with a full quiver\" x3",
-    "l": "Must stay at least 10’ away from other players at all times",
+    "e": "Player becomes <a href=\"/states/#OutOfGame\" data-ajax=\"false\">Invulnerable</a> and may move about the field retrieving their arrows. The player may remove their Invulnerable state in the location they started or at base by stating, \"I return with a full quiver\" x3",
+    "l": "Must stay at least 10’ away from other players at all times <br>A player may not exit Reload at an alternate base location, such as Heart of the Swarm, in this way.",
     "n": "May ask reeve for assistance in retrieving arrows that are within 10’ of other players"
   },
 
