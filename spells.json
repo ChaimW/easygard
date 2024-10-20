@@ -986,7 +986,7 @@
     "s": "Sorcery",
     "r": "Touch",
     "i": "\"Return this [object name] to its former glory\" x5",
-    "e": "Will repair a destroyed item or restore all armor points in one location"
+    "e": "Will repair a destroyed or damaged item or restore all armor points in one location"
   },
 
   "greaterrelease": {
@@ -1045,7 +1045,7 @@
     "r": "Other",
     "i": "\"I enchant thee with Harden\" x3",
     "m": "White Strip",
-    "e": "Bearer's weapons or shield may only be destroyed by Magic Balls/Verbals which destroy objects e.g. Fireball or Pyrotechnics",
+    "e": "Bearer's weapons or shield may only be destroyed or damaged by Magic Balls/Verbals which affect objects e.g. Fireball or Pyrotechnics",
     "l": "Will only affect either the weapons or the shield of the bearer, not both"
   },
 
@@ -1167,7 +1167,7 @@
     "r": "Other",
     "i": "\"This shield shall neither break or bend\" x3",
     "m": "White Strip",
-    "e": "Shield wielded by the player cannot be destroyed. Engulfing effects hitting the shield are ignored"
+    "e": "Shield wielded by the player cannot be destroyed or damaged. Engulfing effects hitting the shield are ignored"
   },
 
   "imbueweapon": {
@@ -1309,7 +1309,7 @@
     "s": "Sorcery",
     "r": "Touch",
     "i": "\"I make this item whole again\" x5",
-    "e": "Destroyed item is repaired, or one point of armor in one location is repaired"
+    "e": "Destroyed or damaged item is repaired, or one point of armor in one location is repaired"
   },
 
   "missileblock": {
@@ -1663,7 +1663,7 @@
     "s": "Sorcery",
     "r": "Self",
     "i": "\"Scavenge\"",
-    "e": "Repair one point of armor in one location, a shield, or a weapon",
+    "e": "Destroyed or damaged item is repaired, or one point of armor in one location is repaired.",
     "l": "<a href=\"/spells/definitions#killtrigger\" data-ajax=\"false\">Kill Trigger</a>"
   },
 
