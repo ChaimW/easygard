@@ -397,7 +397,7 @@
     "s": "Protection",
     "r": "Self",
     "i": "\"Circle of Protection\" x3",
-    "e": "The caster and up to five willing players within six inches of the caster become Insubstantial. The caster may end Circle of Protection for all targets at any time by ending their Insubstantial State with the standard Incantation.<br>All targets:<ul><li>Lose all other States and Ongoing Effects.</li><li>May not move from their starting location.</li><li>Are unaffected by abilities that require the player to move.</li><li>May use magic and abilities on players under the effect of the same Circle of Protection as though they were not Insubstantial.</li><li>May end the effects of Circle of Protection on themselves at any time with the standard Incantation."
+    "e": "The caster and up to five willing players within Touch range of the caster become Insubstantial. The caster may end Circle of Protection for all targets at any time by ending their Insubstantial State with the standard Incantation.<br>All targets:<ul><li>Lose all other States and Ongoing Effects.</li><li>May not move from their starting location.</li><li>Are unaffected by abilities that require the player to move.</li><li>May use magic and abilities on players under the effect of the same Circle of Protection as though they were not Insubstantial.</li><li>May end the effects of Circle of Protection on themselves at any time with the standard Incantation."
   },
 
   "combatcaster": {
@@ -1291,7 +1291,7 @@
     "r": "Self",
     "i": "\"Let the powers of healing flow through me\" x3",
     "m": "Five Yellow Strips",
-    "e": "Caster may Heal a player by touching them, stating \"I grant thee healing\". Bearer must remove an Enchantment strip after each use of Heal",
+    "e": "Caster may Heal a player at Touch range, stating \"I grant thee healing\". Bearer must remove an Enchantment strip after each use of Heal",
     "n": "Mass Healing is removed when the last strip is removed. The effect is not an incantation, and so is not stopped by suppression, and may be used while moving, etc."
   },
 
