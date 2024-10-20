@@ -1557,7 +1557,7 @@
     "t": "Verbal",
     "s": "Death",
     "r": "20'",
-    "i": "\"Death shall ravage thy flesh and make thee fragile\" x3",
+    "i": "\"Death shall make thee fragile\" x3",
     "e": "Target player is <a href=\"/states/#Fragile\" data-ajax=\"false\">Fragile</a>"
   },
 
