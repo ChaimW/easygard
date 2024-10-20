@@ -1015,7 +1015,7 @@
     "s": "Spirit",
     "r": "Touch",
     "i": "\"By the grace of the divine thou art resurrected\" x5",
-    "e": "Target Dead player who has not moved from where they died is returned to life. Enchantments on the player are retained. Any wounds on the player are healed. Works regardless of any States on the target"
+    "e": "Target Dead player who has not moved from where they died is returned to life. Enchantments on the player are retained. Any wounds on the player are healed. Works regardless of any States on the target, and removes Cursed if present."
   },
 
   "greaterundeadminion": {
