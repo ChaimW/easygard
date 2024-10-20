@@ -189,7 +189,7 @@
     "r": "20'",
     "i": "\"The Spirits banish thee from this place\" x3",
     "e": "Target <a href=\"/states/#Insubstantial\" data-ajax=\"false\">Insubstantial</a> player must return to their base where their Insubstantial State immediately ends",
-    "n": "The target's Insubstantial State is replaced with a new insubstantial state from Banish. If the Insubstantial State is ended before reaching the base, the rest of the effect is ended as well. If Banish is cast on self, the caster may end this Insubstantial state at any time by using the exit incantation for Insubstantial. A player bearing Undead Minion or Greater Undead Minion who is currently Insubstantial has their Enchantment removed"
+    "n": "The target's Insubstantial State is replaced with a new insubstantial state from Banish. If the Insubstantial State is ended before reaching the base, the rest of the effect is ended as well. If Banish is cast on self, the caster may end this Insubstantial state at any time by using the exit incantation for Insubstantial."
   },
   "barkskin": {
     "name": "Barkskin",
@@ -945,21 +945,7 @@
     "s": "Spirit",
     "r": "Touch",
     "i": "\"By the grace of the divine thou art resurrected\" x5",
-    "e": "Target Dead player who has not moved from where they died is returned to life. Enchantments on the player are retained. Any wounds on the player are healed. Works regardless of any States on the target, and removes Cursed if present."
-  },
-  "greaterundeadminion": {
-    "name": "Greater Undead Minion",
-    "keywords": "healer enchantment death",
-    "classes": {
-      "Healer": "5"
-    },
-    "t": "Enchantment",
-    "s": "Death",
-    "r": "Other",
-    "i": "<br>\"Flesh rots, bones break, skulls sigh, spirits take let the power of my will descend on thee<br>let the power of my will restore thy spirit<br>let the power of my will knit thy corpse<br>let the power of my will give thee direction<br>let the power of my will cheat thy death<br>by the power of my will, arise my greater minion!\"",
-    "m": "Yellow Strip",
-    "e": "<br>1. Bearer does not die or respawn as normal<br>2. Bearer is <a href=\"/states/#Cursed\" data-ajax=\"false\">Cursed</a> and Suppressed<br>3. When the bearer would normally die, they instead become Insubstantial, remove all Wounds, and must return to the caster as soon as possible. Insubstantial players may not move more than 10’ from the caster and may not speak. The caster may touch the player and then Incant \“Rise and fight again\” x5 to end this Insubstantial State so long as no living enemies are within 10’ of the bearer.<br>4. If this Enchantment's Insubstantial is removed from the Bearer in any other manner than outlined in item 3 (or prevented entirely) this Enchantment is removed<br>5. If the caster dies, this Enchantment is removed the next time the bearer returns to the caster<br>6. If the Enchantment is removed, the bearer dies<br>7. For the duration of the Enchantment, the bearer may treat the caster as a base for the purposes of the effects which require the bearer to go to their base<br>8. Dead players who have not moved from where they died may be targeted by Greater Undead Minion and are immediately returned to life with all Wounds removed and the Insubstantial State applied",
-    "l": "<br>1. The Insubstantial State imposed by Greater Undead Minion can be removed or prevented by any Magic or Ability which would normally be capable of removing Insubstantial or preventing Insubstantial such as Tracking, Planar Grounding, Release, or similar Magic and Abilities<br>2. If Banish or Dimensional Rift is cast on the bearer while they are Insubstantial, the Enchantment is removed, even if the player is unaffected by Banish/ Dimensional Rift<br>3. The caster may not have more than three active Greater Undead Minion and Undead Minion Enchantments combined"
+    "e": "Target Dead player who has not moved more than 5' from where they died is returned to life. Enchantments on the player are retained. Any wounds on the player are healed. Works regardless of any States on the target, and removes Cursed if present."
   },
   "harden": {
     "name": "Harden",
@@ -1254,7 +1240,7 @@
     },
     "t": "Archetype",
     "s": "Neutral",
-    "e": "All magic purchased in the Death School becomes Charge x3. You may have a combined total of five active Greater Undead Minion and Undead Minion Enchantments",
+    "e": "All magic purchased in the Death School becomes Charge x3. You may have five active Undead Minion Enchantments.",
     "l": "You may not purchase any Enchantments from the Protection School"
   },
   "persistent": {
@@ -1349,7 +1335,8 @@
     "m": "Red Strip",
     "r": "Other",
     "i": "\"I coat these weapons with a deadly poison\" x 2",
-    "e": "The next Wound dealt by the bearer in melee is <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Wounds Kill</a>"
+    "e": "The next Wound dealt by the bearer in melee is <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Wounds Kill</a>",
+    "n": "If the target does not actually receive a Wound, e.g. by a Resistance, Poison is not expended."
   },
   "poisonarrow": {
     "name": "Poison Arrow",
@@ -1430,6 +1417,18 @@
     "e": "All shields and weapons carried or worn by the target player are destroyed",
     "l": "Only affects shields and weapons carried or worn when the Verbal is completed",
     "n": "Pyrotechnics targets the player but affects their equipment. Immunities, resistances, and other protections will only protect the equipment from Pyrotechnics if they specifically extend to the equipment, such as Blessed Aura or Flame Blade. Abilities like Enlightened Soul, Protection from Magic, and Adaptive Protection (Flame) do not extend to equipment and thus cannot protect from Pyrotechnics"
+  },
+  "raisedead": {
+    "name": "Raise Dead",
+    "keywords": "healer enchantment verbal death",
+    "classes": {
+      "Healer": "3"
+    },
+    "t": "Verbal",
+    "s": "Death",
+    "r": "Touch*",
+    "i": "\"Rise and fight again\" x5",
+    "e": "Target Dead player who has not moved more than 5' from where they died is returned to life and is Cursed. Target is also Suppressed for 30 seconds. Non-Persistent Enchantments on the player are removed before the player returns to life. Any Wounds on the player are healed."
   },
   "ranger": {
     "name": "Ranger",
@@ -1802,8 +1801,8 @@
     "s": "Sorcery",
     "i": "\"The power of void is mine to evoke\" x3",
     "m": "Black Magic Ball",
-    "e": "Sphere of Annihilation will have one of the following effects on the object first struck:<br>1. A weapon hit is destroyed<br>2. A shield hit is subject to <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Shield Destroying</a><br>3. A player hit dies and is <a href=\"/states/#Cursed\" data-ajax=\"false\">Cursed</a>",
-    "n": "Ignores armor. Enchantments which affect equipment, such as Imbue Shield or Harden, do not function against Sphere of Annihilation"
+    "e": "Sphere of Annihilation ignores armor and enchanments and will have one of the following effects on the object first struck:<br>1. A weapon struck is destroyed<br>2. A shield hit is subject to <a href=\"/states/#SpecialEffects\" data-ajax=\"false\">Shield Destroying</a><br>3. A player hit dies and is <a href=\"/states/#Cursed\" data-ajax=\"false\">Cursed</a>.",
+    "n": "Does not ignore Traits, such as Missile Block."
   },
   "steallifeessence": {
     "name": "Steal Life Essence",
@@ -1869,7 +1868,7 @@
     "s": "Spirit",
     "r": "50",
     "i": "\"I summon thy corpse\" x5",
-    "e": "Target dead player may choose to go to the caster and then counts as though they had not moved from where they died. May be used on a dead player who has not moved from where they died or who is at their respawn"
+    "e": "Target dead player may choose to go to the caster and then counts as though they had not moved from where they died. May be used on a dead player who has not moved more than 5' from where they died or who is at their respawn"
   },
   "summoner": {
     "name": "Summoner",
@@ -1988,6 +1987,17 @@
     "i": "\"Tracking\" x3",
     "e": "Target Insubstantial player immediately has their Insubstantial effect ended"
   },
+  "trickery": {
+    "name": "Trickery",
+    "keywords": "assassin enchantment sorcery insubstantial",
+    "classes": {
+      "Assasain": "1"
+    },
+    "t": "Trait",
+    "s": "Sorcery",
+    "r": "Self",
+    "e": "Player may use Shadow Step, Teleport, and Blink as if they were not Insubstantial, if they are already willingly Insubstantial. Doing so removes the original Insubstantial effect."
+  },
   "trollblood": {
     "name": "Troll Blood",
     "keywords": "druid enchantment protection white frozen",
@@ -2012,21 +2022,21 @@
     "s": "Spirit",
     "r": "Self",
     "i": "\"The wicked flee when I pursue\" immediately after dying",
-    "e": "Player returns to life with their Wounds healed and is immediately Frozen for 30 seconds. Non-Persistent Enchantments on the player are removed before the player returns to life"
+    "e": "Player returns to life with their Wounds healed and is immediately Frozen for 30 seconds."
   },
   "undeadminion": {
     "name": "Undead Minion",
     "keywords": "anti paladin healer enchantment death",
     "classes": {
-      "Healer": "3"
+      "Healer": "5"
     },
     "t": "Enchantment",
     "s": "Death",
     "r": "Other",
     "i": "<br>Flesh rots, bones break, skulls sigh, spirits take let the power of my will descend on thee<br>let the power of my will restore thy spirit<br>let the power of my will knit thy corpse<br>let the power of my will give thee direction<br>let the power of my will cheat thy death<br>by the power of my will, arise my minion!",
     "m": "Yellow Strip",
-    "e": "<br>1. Bearer does not die or respawn as normal<br>2. Bearer is <a href=\"/states/#Cursed\" data-ajax=\"false\">Cursed</a>, <a href=\"/states/#Fragile\" data-ajax=\"false\">Fragile</a>, and Suppressed<br>3. When the bearer would normally die, they instead become Insubstantial, remove all Wounds, and must return to the caster as soon as possible. Insubstantial players may not move more than 10’ from the caster and may not speak. The caster may touch the player and then Incant \“Rise and fight again\” x10 to end this Insubstantial State so long as no living enemies are within 10’ of the bearer<br>4. If this Enchantment's Insubstantial is removed from the Bearer in any other manner than outlined in item 3 (or prevented entirely) this Enchantment is removed<br>5. If the caster dies, this Enchantment is removed the next time the bearer returns to the caster<br>6. If the Enchantment is removed, the bearer dies<br>7. For the duration of the Enchantment, the bearer may treat the caster as a base for the purposes of the effects which require the bearer to go to their base<br>8. Dead players who have not moved from where they died may be targeted by Undead Minion and are immediately returned to life with all Wounds removed and the Insubstantial State applied",
-    "l": "<br>1. The Insubstantial State imposed by Undead Minion can be removed or prevented by any Magic or Ability which would normally be capable of removing Insubstantial or preventing Insubstantial such as Tracking, Planar Grounding, Release, or similar Magic and Abilities<br>2. If Banish or Dimensional Rift is cast on the bearer while they are Insubstantial, the Enchantment is removed, even if the player is unaffected by Banish/Dimensional Rift<br>3. The caster may not have more than three active Greater Undead Minion and Undead Minion Enchantments combined"
+    "e": "When the bearer dies, they must return to the caster. While the bearer is enchanted, the caster gains Raise Dead (Unlimited) (m) which can only be cast with the bearer as the target, and ignores the requirement for the bearer to have not moved from where they died. For the duration of the Enchantment, the bearer may treat the caster as a base for the purposes of the effects which require the bearer to go to their base. This enchantment is persistent, and remains active while the bearer is dead.",
+    "l": "The caster may not have more than three active Undead Minion Enchantments."
   },
   "vampirism": {
     "name": "Vampirism",
