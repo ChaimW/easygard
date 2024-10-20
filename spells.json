@@ -1418,6 +1418,18 @@
     "l": "Only affects shields and weapons carried or worn when the Verbal is completed",
     "n": "Pyrotechnics targets the player but affects their equipment. Immunities, resistances, and other protections will only protect the equipment from Pyrotechnics if they specifically extend to the equipment, such as Blessed Aura or Flame Blade. Abilities like Enlightened Soul, Protection from Magic, and Adaptive Protection (Flame) do not extend to equipment and thus cannot protect from Pyrotechnics"
   },
+  "rage": {
+    "name": "Rage",
+    "keywords": "barbarian verbal sorcery",
+    "classes": {
+      "Barbarian": "2"
+    },
+    "t": "Verbal",
+    "s": "Sorcery",
+    "r": "Self",
+    "i": "I am filled with rage!",
+    "e": "Caster is unaffected by Verbal abilities and their weapons are Shield Crushing and Armor Breaking for seven seconds. Caster must chant this time out loud, as per Chanting; failure to count ends the effect."
+  },
   "raisedead": {
     "name": "Raise Dead",
     "keywords": "healer enchantment verbal death",
