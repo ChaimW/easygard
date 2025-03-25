@@ -2,7 +2,7 @@ require 'json'
 
 class Spells
   def initialize()
-	json = File.read('spells.json')
+	json = File.read('api/lib/abilities.json')
 	@allSpells = JSON.parse(json)
   end
 
