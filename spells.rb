@@ -2,13 +2,17 @@ require 'json'
 
 class Spells
   def initialize()
-	json = File.read('api/lib/abilities.json')
-	@allSpells = JSON.parse(json)
+  json = File.read('api/lib/abilities.json')
+  @allSpells = JSON.parse(json)
   end
 
   def allSpells()
-  	return @allSpells
+    return spellParse()
+  end
+  
+  def spellParse()
+    data = @allSpells
+    return @allSpells
   end
 
 end
-
