@@ -9,4 +9,4 @@ Information and most of the textual content is derived from the Amtgard Rules of
 
 The mobile implementation is done by [Lord Kismet](http://ork.amtgard.com/orkui/?Route=Player/index/43232) of the [Felfrost Duchy in Ottawa](http://felfrost.ca) with help from <a href="https://ork.amtgard.com/orkui/?Route=Player/index/171316">The Wizard of Hats</a>.
 
-
+Now uses the [Amtgard Rules API](https://github.com/ChaimW/Amtgard-Rules-API) (which is in fact derived from this project).
