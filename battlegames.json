@@ -755,6 +755,21 @@
     "equipment": "Flagging tape, tokens for fish, bungee cord or rope",
     "description": "<br>In the center of the field, a rectangular area is created (sized based on the game, but examples include 20ft x 50ft and 50ft x 100ft), which represents the \"Fish Tank.\" One team is a raiding party trying to acquire some fresh seafood for their employer, while the other team represents the tank's owners who are defending their stock.<p>Players on either team can capture fish (signified by pylons, tokens, whatever is on hand in quantity), or fight and defeat a kraken tentacle, and return it to their Base. Players must enter the tank (signified by crawling on their knees as if in a Water Terrain Effect) to retrieve fish tokens, which can be carried in a free hand and cannot be made unavailable (i.e. through Insubstantial or Frozen).<p>Fighting and defeating the Kraken tentacle will allow the player who killed the tentacle to grab a piece of tentacle (denoted by a bandana or flag) which can be returned to their base for points as well. Statistics for the tentacle are below.<p>Fish and Kraken Tentacles are removed from play once they are returned to a Base and counted for points, however, they may be stolen by the opposing team by killing the player carrying them while they are in transit.<p>For counting points, Fish are worth 1 point, and Tentacles are worth 5. The team with the most points accumulated by the end of the game (suggested 30 minutes) wins.<p><p><b>Kraken Tentacles:</b><p>Signified by two NPCs connected by a bungee cord or rope.<p><i>Weapons:</i> Any melee; All weapons are considered Armour Breaking and Shield Crushing<p><i>Armour:</i> None; Protected by three stacked Blessing against Harm enchantments each (T)<p><i>Immunities:</i> None; Protected by an Enlightened Soul enchantment (T)<p><i>Aquatic:</i> May move without penalty through Water Terrain Effects. One player must remain inside the tank at all times.<p><i>Connected:</i> Both players must be defeated to earn a piece of Tentacle to score points."
   },
+  "tangerinedream": {
+    "name": "Tangerine Dream",
+    "credit": "Kimjin Jong, Viridian Outlands",
+    "teams": "2",
+    "lives": "Infinite",
+    "respawn": "(PLACEHOLDER)",
+    "players": "(PLACEHOLDER)",
+    "objective": "Hold the tangerine in the center zone for 60 seconds to score a point.",
+    "types": [
+      "class"
+    ],
+    "equipment": "Medium Punch Shield, preferably in the style/shape of a tangerine",
+    "refresh": "(PLACEHOLDER)",
+    "description": "<br>Tangerine Dream is a King of the Hill style game where you must hold the tangerine (a Medium Punch Shield, typically in the style/shape of a tangerine) in the center zone to score points within the center zone to score points. If you can hold it in the center zone for 60 seconds, your team scores a point, at which point you die, have all enchantments removed, and must go to respawn (and cannot use on-death abilities or be resurrected).<br>Becoming Frozen, Stunned, Insubstantial, Invulnerable, getting killed, being pushed out (by abilities), or walking out of the zone will make you drop the Tangerine immediately.<br>Passing the shield to a friend will restart the counter.<br><br>The Tangerine is a powerful artifact! Any class can wield it — even the humble Peasant — and is under the effect of Imbue Shield, and blocks everything, including things that would otherwise ignore or bypass this.<br><br><img src='/images/tangerine-dream.jpg' width='65%'>"
+  },
   "theaxegame": {
     "name": "The Axe Game",
     "credit": "Celestial Kingdom",
