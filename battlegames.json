@@ -759,9 +759,6 @@
     "name": "Tangerine Dream",
     "credit": "Kimjin Jong, Viridian Outlands",
     "teams": "2",
-    "lives": "Infinite",
-    "respawn": "(PLACEHOLDER)",
-    "players": "(PLACEHOLDER)",
     "objective": "Hold the tangerine in the center zone for 60 seconds to score a point.",
     "types": [
       "class"
