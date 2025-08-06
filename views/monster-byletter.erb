@@ -22,29 +22,23 @@
                <% end %>
                </h3>
                <p>
-                  <% if monsterData.include?('t') %>
-                  <b>Type:</b> <%= monsterData['t'] %><br>
+                  <% if monsterData.include?('d') %>
+                  <b>Description:</b> <%= monsterData['d'] %><br>
+                  <% end %>
+                  <% if monsterData.include?('g') %>
+                  <b>Garb:</b> <%= monsterData['g'] %><br>
+                  <% end %>
+                  <% if monsterData.include?('ar') %>
+                  <b>Armor:</b> <%= monsterData['ar'] %><br>
                   <% end %>
                   <% if monsterData.include?('s') %>
-                  <b>School:</b> <%= monsterData['s'] %><br>
+                  <b>Shields:</b> <%= monsterData['s'] %><br>
                   <% end %>
-                  <% if monsterData.include?('r') %>
-                  <b>Range:</b> <%= monsterData['r'] %><br>
+                  <% if monsterData.include?('w') %>
+                  <b>Weapons:</b> <%= monsterData['w'] %><br>
                   <% end %>
-                  <% if monsterData.include?('i') %>
-                  <b>Incant:</b> <%= monsterData['i'] %><br>
-                  <% end %>
-                  <% if monsterData.include?('m') %>
-                  <b>Materials:</b> <%= monsterData['m'] %><br>
-                  <% end %>
-                  <% if monsterData.include?('e') %>
-                  <b>Effect:</b> <%= monsterData['e'] %><br>
-                  <% end %>
-                  <% if monsterData.include?('l') %>
-                  <b>Limitations:</b> <%= monsterData['l'] %><br>
-                  <% end %>
-                  <% if monsterData.include?('n') %>
-                  <b>Notes:</b> <%= monsterData['n'] %><br>
+                  <% if monsterData.include?('a') %>
+                  <b>Abilities:</b><br><%= monsterData['a'] %>
                   <% end %>
                </p>
             </div>
