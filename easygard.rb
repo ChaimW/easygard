@@ -2,9 +2,11 @@ require 'sinatra'
 
 require_relative 'spells'
 require_relative 'battlegames'
+require_relative 'monsters'
 
 spells = Spells.new()
 battlegames = Battlegames.new()
+monsters = Monsters.new()
 
 get '/' do 
 	erb :home
@@ -174,6 +176,51 @@ end
 
 get '/classes/' do 
 	erb :classes
+end
+
+get '/monsters/' do 
+	@allmonsters = monsters.allmonsters()
+	erb :monsters
+end
+
+get '/monsters/all' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-all"
+end
+
+get '/monsters/balls' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-balls"
+end
+
+get '/monsters/definitions' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-definitions"
+end
+
+get '/monsters/self' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-self"
+end
+
+get '/monsters/touch' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-touch"
+end
+
+get '/monsters/verbal' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-verbal"
+end
+
+get '/monsters/archetype' do
+	@allmonsters = monsters.allmonsters()
+	erb :"monsters-archetype"
+end
+
+get '/monsters/:letter' do
+	@reducedHash = monsters.allmonsters().reject {|k,v| k[0] != params[:letter]}
+	erb :"monster-byletter"
 end
 
 get '/about/' do 
