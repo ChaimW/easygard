@@ -1,0 +1,62 @@
+<% @loaded = 'false' %>
+<div data-role="page" class="jqm-demos jqm-home" id="monsters">
+
+<%= erb :'sections/updated' %>
+<%= erb :'sections/header' %>
+<%= erb :'sections/nav-panel' %>
+<%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+<% @loaded = 'true' %>
+
+	<div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" data-icon="false">
+               <li><a href="/monsters/all" data-ajax="false">All monsters</a></li>
+               <li><a href="/enchantments/" data-ajax="false">Enchantments</a></li>
+               <li><a href="/monsters/verbal" data-ajax="false">Verbal monsters</a></li>
+               <li><a href="/monsters/balls" data-ajax="false">Magic Balls</a></li>
+               <li><a href="/monsters/archetype" data-ajax="false">Archetypes</a></li>
+               <li data-role="list-divider">By Range</li>
+               <li><a href="/monsters/self" data-ajax="false">Range Self</a></li>
+               <li><a href="/monsters/touch" data-ajax="false">Range Touch</a></li>
+               <li data-role="list-divider">Magic Overview</li>
+               <li><a href="#magic-made-easy">Magic Made Easy</a></li>
+               <li><a href="/monsters/definitions" data-ajax="false">Magic Definitions</a></li>
+            </ul>
+
+	</div><!-- /footer -->
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<!-- Magic made Easy Page -->
+
+<div data-role="page" class="jqm-demos jqm-home" id="magic-made-easy">
+
+<%= erb :'sections/header' %>
+<%= erb :'sections/nav-panel' %>
+<%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+<% @loaded = 'true' %>
+
+	<div role="main" class="ui-content">
+    		<div class="jqm-block-content">
+    			<h3>Magic Made Easy</h3>
+				<p>The number and variety of Abilities, States, and Special Effects can seem overwhelming, but it doesn’t have to be. Here are a few quick steps to help you learn what you need to know to play on the field with magic and abilities.<br>
+				Only three things can adversely affect you: <a href="/weapons/" data-ajax="false">Weapons</a>, <a href="/monsters/balls" data-ajax="false">Magic Balls</a>, and <a href="/monsters/verbal" data-ajax="false">Verbals</a>.<br>
+				Most weapons and Magic Balls have to physically hit you or your equipment to have an effect. No hit, no effect, no problem.<br>
+				Certain Magic Balls and weapons are Engulfing (Iceball, Pinning Arrow, etc), meaning that they can also affect you by hitting your carried equipment or garb. Everything else has to hit your body.<br>
+				Verbal abilities all follow the same format:  They state your name, point at you, and say an incantation of three repetitions of a phrase that casts the Verbal.<br>
+				<ul>
+					<li>All offensive Verbals have very descriptive incantations.  The incantation typically contains the <a href="/monsters/definitions#school" data-ajax="false">School</a> and the State of the ability being used. Example:  The incantation for <a href="/monsters/h#holdperson" data-ajax="false">Hold Person</a> is “I command thee to stop” three times;  The School is ‘Command’ and the State it inficts is <a href="/states/#Stopped" data-ajax="false">‘Stopped’</a></li>
+					<li>No Verbal has a range greater than 50 feet. If you can get further away from the caster than that you won’t be affected</li>
+				</ul>
+				<p>There are lots of abilities, but only a few results. If you read through and understand the <a href="/states/#StatesMadeEasy" data-ajax="false">States Made Easy</a> and <a href="/states/#SpecialEffects" data-ajax="false">Special Effects</a> pages you will understand the result of any ability used against you in combat on the  field. All offensive combat abilities (with very few exceptions) result in one of those States or Special Effects. If you don’t know what an ability does by its incantation don’t worry; ask the caster to explain and they can communicate to you in just a couple of words exactly what happened using States and Special Effects.<br>
+				Immunities are also very simple: If the ability targeting you is of a given School (which is always part of the incantation) and you have Immunity to that School, then the ability has no effect on you. The only exceptions are if they affect your equipment or your Enchantments instead of you yourself, but there are only a few abilities that do that. If you are unaffected by an ability, you must declare so when the ability is complete. You can also let them know before hand if you're feeling generous.<br>
+        Declaring means to give information of the game state verbally. Some abilities and mechanics require declaration. Other things, such as your States, Ongoing Effects, armor points, safety information, etc can be declared at any time. You may make declarations even if you otherwise would not be able to speak, such as by being Frozen or Stunned.
+			</div>
+
+	</div><!-- /footer -->
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+

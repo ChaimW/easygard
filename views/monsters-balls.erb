@@ -1,0 +1,25 @@
+<% @loaded = 'false' %>
+<%  monsterBalls = @allmonsters.reject {|k,v|
+  if v.has_key?('t') && (v['t'].include? "Magic Ball")
+       false
+  else
+       true
+  end
+       
+  }%>
+<div data-role="page" class="jqm-demos jqm-home" id="monsters-ball">
+  <%= erb :'sections/updated' %>
+  <%= erb :'sections/header' %>
+  <%= erb :'sections/nav-panel' %>
+  <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+  <% @loaded = 'true' %>
+  <div role="main" class="ui-content">
+    <ul data-role="listview" data-filter="true" data-autodividers="true" data-filter-placeholder="Search Magic Balls" data-inset="true" data-icon="false">
+      <% monsterBalls.each {|key, value| %>
+      <li><a href=<%="/monsters/#{key[0]}##{key}"%> data-ajax="false"><%="#{value['name']}"%></a></li>
+      <% } %>
+    </ul>
+  </div>
+  <!-- /content -->
+</div>
+<!-- /page -->
