@@ -179,47 +179,47 @@ get '/classes/' do
 end
 
 get '/monsters/' do 
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :monsters
 end
 
 get '/monsters/all' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-all"
 end
 
 get '/monsters/balls' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-balls"
 end
 
 get '/monsters/definitions' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-definitions"
 end
 
 get '/monsters/self' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-self"
 end
 
 get '/monsters/touch' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-touch"
 end
 
 get '/monsters/verbal' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-verbal"
 end
 
 get '/monsters/archetype' do
-	@allmonsters = monsters.allmonsters()
+	@allmonsters = monsters.allMonsters()
 	erb :"monsters-archetype"
 end
 
 get '/monsters/:letter' do
-	@reducedHash = monsters.allmonsters().reject {|k,v| k[0] != params[:letter]}
+	@reducedHash = monsters.allMonsters().reject {|k,v| k[0] != params[:letter]}
 	erb :"monster-byletter"
 end
 
