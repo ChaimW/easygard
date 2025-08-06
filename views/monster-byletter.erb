@@ -11,16 +11,6 @@
          <div role="main" class="ui-content">
             <h3 class="ui-bar ui-bar-a ui-corner-all"><%= monsterData['name'] %></h3>
             <div class="ui-body ui-body-a ui-corner-all">
-               <h3>
-               <% monsterData['classes'].each do |aClass, aLevel| %>
-                  <% if (aClass.casecmp('antipaladin')) == 0 %>
-                  <% className = "Anti-Paladin" %>
-                  <% else %>
-                  <% className = aClass %>
-                  <% end %>
-                  <a href="/classes/#<%=aClass%>" data-ajax="false"><%=className%></a> <%=aLevel%>
-               <% end %>
-               </h3>
                <p>
                   <% if monsterData.include?('d') %>
                   <b>Description:</b> <%= monsterData['d'] %><br>
