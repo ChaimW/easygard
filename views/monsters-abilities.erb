@@ -1,0 +1,87 @@
+<% @loaded = 'false' %>
+<div data-role="page" class="jqm-demos jqm-home" id="monster-abilities">
+  <%= erb :'sections/updated' %>
+  <%= erb :'sections/header' %>
+  <%= erb :'sections/nav-panel' %>
+  <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+  <% @loaded = 'true' %>
+  
+  <div role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true" data-icon="false">
+      <li data-role="list-divider">Monster Mechanics</li>
+      <li><a href="#monsterarmor">Monster Armor</a></li>
+      <li><a href="#inherentenchantments">Inherent Enchantments</a></li>
+      <li data-role="list-divider">Monster Abilities</li>
+      <li><a href="#amorphous">Amorphous</a></li>
+      <li><a href="#aquatic">Aquatic</a></li>
+      <li><a href="#flying">Flying</a></li>
+      <li><a href="#hardtokill">Hard to Kill</a></li>
+      <li><a href="#mighty">Mighty</a></li>
+      <li><a href="#resistance">Monstrous Resistance</a></li>
+      <li><a href="#magicuser">Magic User</a></li>
+      <li><a href="#inherentweapons">Inherent Weapons</a></li>
+      <li><a href="#naturalarmor">Natural Armor</a></li>
+      <li><a href="#nimble">Nimble</a></li>
+      <li><a href="#passwithouttrace">Pass Without Trace</a></li>
+      <li><a href="#instant">Instant</a></li>
+      <li><a href="#sheernumbers">Sheer Numbers</a></li>
+      <li><a href="#slow">Slow</a></li>
+      <li><a href="#strong">Strong</a></li>
+      <li><a href="#thickskin">Thick Skin</a></li>
+      <li><a href="#unenchantable">Unenchantable</a></li>
+    </ul>
+  </div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Monster Armor Page -->
+<div data-role="page" class="jqm-demos jqm-home" id="monsterarmor">
+  <%= erb :'sections/header' %>
+  <%= erb :'sections/nav-panel' %>
+  <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+  <% @loaded = 'true' %>
+  
+  <div role="main" class="ui-content">
+    <div class="jqm-block-content">
+      <h3>Monster Armor</h3>
+      Some monsters have built-in Magic Armor, which is granted as a Trait. A monster that has four points of Monster armor will have <b>4pt (Magic)</b> written into their Armor line.<br><br>
+      Monster Armor:
+      <ol>
+        <li>Behaves identically to magic armor.</li>
+        <li>Cannot be combined with other types of armor.</li>
+      </ol>
+      <p><i><a href="#monster-abilities">All Monster Abilities & Mechanics</a></i></p>
+    </div>
+  </div><!-- /content -->
+</div><!-- Monster Armor /page -->
+
+<!-- Inherent Enchantments Page -->
+<div data-role="page" class="jqm-demos jqm-home" id="inherentenchantments">
+  <%= erb :'sections/header' %>
+  <%= erb :'sections/nav-panel' %>
+  <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+  <% @loaded = 'true' %>
+  
+  <div role="main" class="ui-content">
+    <div class="jqm-block-content">
+      <h3>Inherent Enchantments</h3>
+      These Enchantments are automatically cast upon a monster when they start a scenario, respawn, or cast Sheer Numbers. For example, a monster may be written as having <b>Gift of Air (i)</b>. Inherent enchantments differ from Traits in that they can be Dispelled or removed and should be announced upon engagement with other players. If a player is already at their Enchantment limit when an Inherent enchantment would be applied, they may choose which Enchantment(s) to lose to meet their Enchantment limit.
+      <p><i><a href="#monster-abilities">All Monster Abilities & Mechanics</a></i></p>
+    </div>
+  </div><!-- /content -->
+</div><!-- Inherent Enchantments /page -->
+
+<!-- Abilities Page -->
+<div data-role="page" class="jqm-demos jqm-home" id="abilities">
+  <%= erb :'sections/header' %>
+  <%= erb :'sections/nav-panel' %>
+  <%= erb :'sections/search-panel', locals: {loaded: @loaded} %>
+  <% @loaded = 'true' %>
+  
+  <div role="main" class="ui-content">
+    <div class="jqm-block-content">
+      <h3>Abilities</h3>
+      Powers or skills that must be activated to be used.
+      <p><i><a href="#monster-abilities">All Monster Abilities & Mechanics</a></i></p>
+    </div>
+  </div><!-- /content -->
+</div><!-- Abilities /page -->

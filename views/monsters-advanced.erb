@@ -1,6 +1,6 @@
 <% @loaded = 'false' %>
-<%  monstersArchetype = @allmonsters.reject {|k,v|
-          if (v['t'].casecmp('Archetype') != 0)
+<%  monstersAdvanced = @allmonsters.reject {|k,v|
+          if (v['t'].casecmp('Advanced') != 0)
                true
           else
                false
@@ -8,7 +8,7 @@
                
      }%>
 
-<div data-role="page" class="jqm-demos jqm-home" id="monsters-archetype">
+<div data-role="page" class="jqm-demos jqm-home" id="monsters-Advanced">
 
 <%= erb :'sections/updated' %>
 <%= erb :'sections/header' %>
@@ -17,9 +17,9 @@
 <% @loaded = 'true' %>
 
          <div role="main" class="ui-content">
-            <ul data-role="listview" data-filter="true" data-autodividers="true" data-filter-placeholder="Search monsters (Archetype)" data-inset="true" data-icon="false">
+            <ul data-role="listview" data-filter="true" data-autodividers="true" data-filter-placeholder="Search monsters (Advanced)" data-inset="true" data-icon="false">
 
-<% monstersArchetype.each {|key, value| %>
+<% monstersAdvanced.each {|key, value| %>
 
                <li><a href=<%="/monsters/#{key[0]}##{key}"%> data-ajax="false"><%="#{value['name']}"%></a></li>
 <% } %>

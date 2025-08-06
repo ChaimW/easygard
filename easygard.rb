@@ -188,34 +188,29 @@ get '/monsters/all' do
 	erb :"monsters-all"
 end
 
-get '/monsters/balls' do
+get '/monsters/abilities' do
 	@allmonsters = monsters.allMonsters()
-	erb :"monsters-balls"
+	erb :"monsters-abilities"
 end
 
-get '/monsters/definitions' do
+get '/monsters/standard' do
 	@allmonsters = monsters.allMonsters()
-	erb :"monsters-definitions"
+	erb :"monsters-standard"
 end
 
-get '/monsters/self' do
+get '/monsters/advanced' do
 	@allmonsters = monsters.allMonsters()
-	erb :"monsters-self"
+	erb :"monsters-advanced"
 end
 
-get '/monsters/touch' do
+get '/monsters/scenario' do
 	@allmonsters = monsters.allMonsters()
-	erb :"monsters-touch"
+	erb :"monsters-scenario"
 end
 
-get '/monsters/verbal' do
+get '/monsters/legendary' do
 	@allmonsters = monsters.allMonsters()
-	erb :"monsters-verbal"
-end
-
-get '/monsters/archetype' do
-	@allmonsters = monsters.allMonsters()
-	erb :"monsters-archetype"
+	erb :"monsters-legendary"
 end
 
 get '/monsters/:letter' do

@@ -1,4 +1,22 @@
 {
+  "automaton": {
+    "name": "Automaton",
+    "t":"Advanced",
+    "g":"Metallic garb and/or armor to give the appearance of a metal body.",
+    "ar":"4pt (Worn)",
+    "s":"Medium",
+    "d":"Automatons are humanoid metal constructs permanently animated by powerful rituals. Scholars are unsure whether they are truly sentient, or if their cunning is simply a testament to the skill of their creator.",
+    "w": "Dagger, Short, Hinged, Long",
+    "a": "Stoneskin (Self) 1/Life (i) (ex)<br>Brutal Strike 1/Life Charge x3 (ex) (Ambulant)"
+  },
+  "basilisk": {
+    "name": "Basilisk",
+    "t":"Scenario",
+    "g":"Draconic Wings",
+    "d":"While Beastfolk are commonly referred to collectively, they represent a wide variety of humanoids. No matter their origin, they share keen senses and a knack for survival.",
+    "w": "Long (1), Heavy Thrown",
+    "a": "Stoneskin (Self) 1/Life (i) (ex)<br>Brutal Strike 1/Life Charge x3 (ex) (Ambulant)"
+  },
   "beastfolk": {
     "name": "Beastfolk",
     "t":"Standard",
@@ -62,6 +80,14 @@
     "d":"A Unicorn resembles a great white horse with a golden horn springing from its head. They are kindhearted and will help those in need. They often shy away from violence.",
     "w": "Long (1)",
     "a": "Martyr 2/Life Charge x3 (ex)<br>Mass Healing (Self) 1/Life (i) (m)<br>Resurrect 1/Life Charge x5 (m)<br>Sever Spirit 1/Life Charge x5 (m)<br>Blessed Aura (Others) 2/Life (ex)"
+  },
+  "wyvern": {
+    "name": "Wyvern",
+    "t":"Standard",
+    "g":"Draconic Wings",
+    "d":"While Beastfolk are commonly referred to collectively, they represent a wide variety of humanoids. No matter their origin, they share keen senses and a knack for survival.",
+    "w": "Long (1), Heavy Thrown",
+    "a": "Stoneskin (Self) 1/Life (i) (ex)<br>Brutal Strike 1/Life Charge x3 (ex) (Ambulant)"
   },
   "wyvern": {
     "name": "Wyvern",

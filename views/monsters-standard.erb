@@ -1,14 +1,14 @@
 <% @loaded = 'false' %>
-<%  monstersVerbal = @allmonsters.reject {|k,v|
-          if (v['t'].casecmp('Enchantment')) != 0 && v.has_key?('t') && (v['t'].include? "Verbal")
-               false
-          else
+<%  monstersStandard = @allmonsters.reject {|k,v|
+          if (v['t'].casecmp('Standard') != 0)
                true
+          else
+               false
           end
                
      }%>
 
-<div data-role="page" class="jqm-demos jqm-home" id="monsters-verbal">
+<div data-role="page" class="jqm-demos jqm-home" id="monsters-standard">
 
 <%= erb :'sections/updated' %>
 <%= erb :'sections/header' %>
@@ -17,9 +17,9 @@
 <% @loaded = 'true' %>
 
          <div role="main" class="ui-content">
-            <ul data-role="listview" data-filter="true" data-autodividers="true" data-filter-placeholder="Search monsters (Verbal)" data-inset="true" data-icon="false">
+            <ul data-role="listview" data-filter="true" data-autodividers="true" data-filter-placeholder="Search monsters (Standard)" data-inset="true" data-icon="false">
 
-<% monstersVerbal.each {|key, value| %>
+<% monstersStandard.each {|key, value| %>
 
                <li><a href=<%="/monsters/#{key[0]}##{key}"%> data-ajax="false"><%="#{value['name']}"%></a></li>
 <% } %>
